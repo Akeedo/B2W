@@ -95,7 +95,7 @@ img {
 }
 
 .modal-content {
-  background: url('../img/tile.jpg') top left repeat;
+  background: url("../img/tile.jpg") top left repeat;
 }
 
 .badge.social {
@@ -135,7 +135,6 @@ blockquote {
   border: none;
   font-style: italic;
   text-align: left;
-
 }
 
 blockquote cite {
@@ -146,7 +145,7 @@ blockquote cite {
 
 #signup {
   text-align: center;
-  background: url('../img/hipster-stuff.jpg') center center repeat fixed;
+  background: url("../img/hipster-stuff.jpg") center center repeat fixed;
   background-size: cover;
   color: white;
   padding: 140px 0;
@@ -192,7 +191,84 @@ footer li.signup-link a:hover {
   font-weight: bold;
 }
 
+/* === BLOG === */
+.post {
+  position: relative;
+  border: solid 1px #ddd;
+  background: white;
+  margin: 0 0 40px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+}
 
+.post header,
+.post .post-excerpt {
+  padding: 20px;
+}
+
+.post header h1,
+.post header h3 {
+  margin: 0 0 15px;
+  padding: 0 0 15px;
+  border-bottom: solid 1px #ddd;
+}
+
+.post header h1 {
+  font-size: 24px;
+}
+
+.post-image {
+  height: auto;
+}
+
+.post-detail {
+  font-size: 12px;
+  width: 90%;
+}
+
+.post-details i.fa {
+  padding-left: 10px;
+}
+
+.post-details i.fa:first-child {
+  padding: 0;
+}
+
+/* ===Comments=== */
+.post-comments-badge {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  top: 25px;
+  right: 20px;
+  border: none;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  background: #79b844;
+  text-align: center;
+  display: table;
+}
+
+.post-comments-badge a {
+  display: table-cell;
+  vertical-align: middle;
+  color: white;
+  font-size: 20px;
+  line-height: 20px;
+}
+
+.post-comments-badge i.fa {
+  display: block;
+  font-size: 15px;
+  padding: 0;
+  margin-bottom: 4px;
+}
+
+.post-comments-badge:hover {
+  background-color: #8bc653;
+}
 
 /* ===Hero=== */
 #hero {
@@ -255,6 +331,7 @@ footer li.signup-link a:hover {
 
 #price-timeline h4 {
   margin: 0 0 10px;
+  color: black;
 }
 
 #price-timeline h4 small {
@@ -265,10 +342,9 @@ footer li.signup-link a:hover {
 
 /* === LAYOUT === */
 
-.row+.row {
+.row + .row {
   margin: 20px;
 }
-
 
 section {
   padding: 80px 0;
@@ -284,6 +360,28 @@ section h2 {
 
 section h3 {
   margin: 30px 0 10px;
+}
+
+.feature-image {
+  display: table;
+  width: 100%;
+}
+
+.feature-image-default {
+  background: url("../img/stuff-feature.jpg") no-repeat;
+  background-size: cover;
+}
+
+.feature-image-default-alt {
+  background: url("../img/hipster-feature.jpg") no-repeat;
+  background-size: cover;
+}
+
+.feature-image h1 {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: white;
 }
 
 #optin {
@@ -322,7 +420,7 @@ section h3 {
 }
 
 #instructor {
-  background: white url('../img/brad-elvis.png')90% -10px no-repeat;
+  background: white url("../img/brad-elvis.png") 90% -10px no-repeat;
 }
 
 #instructor h2 {
@@ -404,14 +502,14 @@ i.ci {
 }
 
 /* === MEDIA QUERIES === */
-@media screen and (max-width : 991px) {
+@media screen and (max-width: 991px) {
   #instructor .container {
     background: rgba(255, 255, 255, 0.8);
     padding: 20px;
   }
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .logo {
     width: 50%;
   }
@@ -425,7 +523,7 @@ i.ci {
   }
 }
 
-@media screen and (max-width:568px) {
+@media screen and (max-width: 568px) {
   #instructor .num {
     height: 100px;
     width: 100px;
